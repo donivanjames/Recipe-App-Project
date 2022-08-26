@@ -76,10 +76,6 @@ tr:nth-of-type(even) {
   background-color: #fff0c7;
 }
 
-
-
-/* Issues Here */
-
 th, td {
   width: 10%;
 }
