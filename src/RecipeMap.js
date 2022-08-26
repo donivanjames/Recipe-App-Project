@@ -16,12 +16,12 @@ function RecipeMap({ newProp: { recipes, setRecipes } }) {
 
             return (
                 <tr key={index}>
-                <td>{recipe.name}</td>
-                <td>{recipe.cuisine}</td>
-                <td><img className="contain" src={recipe.photo} alt="Food Pic" /></td>
-                <td className="content_td"><p>{recipe.ingredients}</p></td>
-                <td className="content_td"><p>{recipe.preparation}</p></td>
-                <td><button onClick={(event) => deleteRecipe(event, index)} name="delete">Delete</button></td>
+                    <td>{recipe.name}</td>
+                    <td>{recipe.cuisine}</td>
+                    <td><img className="contain" src={recipe.photo} alt="Food Pic" /></td>
+                    <td className="content_td"><p>{recipe.ingredients}</p></td>
+                    <td className="content_td"><p>{recipe.preparation}</p></td>
+                    <td><button onClick={(event) => deleteRecipe(event, index)} name="delete">Delete</button></td>
                 </tr>
             )
         })

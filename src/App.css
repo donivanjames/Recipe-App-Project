@@ -13,6 +13,10 @@ header {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+textarea {
+  width: 80%;
+}
+
 /* typography */
 
 h1 {
@@ -59,9 +63,7 @@ table {
 }
 
 td {
-  width: 10%;
   height: 120px;
-
   letter-spacing: 1px;
   overflow-x:hidden;
   overflow-y:hidden;
@@ -70,10 +72,20 @@ td {
   text-align: center;
 }
 
-td:nth-child(n+4):nth-child(-n+5) {
-  width: 30%;
-}
-
 tr:nth-of-type(even) {
   background-color: #fff0c7;
 }
+
+
+
+/* Issues Here */
+
+th, td {
+  width: 10%;
+}
+
+th:nth-child(n+4):nth-child(-n+5),
+td:nth-child(n+4):nth-child(-n+5) {
+  width: 30%;
+} 
+
